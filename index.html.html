@@ -1,140 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profile Website</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f9;
-      color: #333;
-    }
-    .welcome-screen, .profile-screen {
-      display: none;
-      text-align: center;
-      padding: 50px 20px;
-    }
-    .welcome-screen.active, .profile-screen.active {
-      display: block;
-    }
-    .welcome-screen h1 {
-      color: #007bff;
-      margin-bottom: 20px;
-    }
-    .welcome-screen p {
-      font-size: 18px;
-      margin-bottom: 30px;
-    }
-    .btn {
-      padding: 10px 20px;
-      font-size: 18px;
-      color: #fff;
-      background-color: #007bff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-    .btn:hover {
-      background-color: #0056b3;
-    }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 20px;
-      text-align: center;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-    .profile-img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid #007bff;
-    }
-    h1 {
-      color: #007bff;
-      margin-top: 15px;
-    }
-    p {
-      font-size: 18px;
-      margin: 10px 0;
-    }
-    .info {
-      text-align: left;
-      margin: 20px 0;
-    }
-    .info h3 {
-      color: #007bff;
-      border-bottom: 2px solid #007bff;
-      display: inline-block;
-      margin-bottom: 10px;
-    }
-    .info p {
-      margin: 5px 0;
-    }
-    .social-links a {
-      display: inline-block;
-      margin: 10px;
-      text-decoration: none;
-      color: #fff;
-      background-color: #007bff;
-      padding: 10px 20px;
-      border-radius: 5px;
-      transition: background 0.3s ease;
-    }
-    .social-links a:hover {
-      background-color: #0056b3;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinchana K N</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .details, .education, .certifications, .projects, .skills, .activities {
+            padding: 10px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .details p, .education table, .certifications ul, .skills ul, .activities ul {
+            margin: 5px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
-  <div class="welcome-screen active" id="welcomeScreen">
-    <h1>Welcome to My Profile</h1>
-    <p>Are you ready to learn more about me? Click "Continue" to proceed!</p>
-    <button class="btn" onclick="showProfile()">Continue</button>
-  </div>
 
-  <div class="profile-screen" id="profileScreen">
-    <div class="container">
-      <img src="profile-picture.jpg" alt="Profile Picture" class="profile-img">
-      <h1>John Doe</h1>
-      <p>Software Engineer | Tech Enthusiast | Problem Solver</p>
-      <div class="info">
-        <h3>About Me</h3>
-        <p>Hi, I'm John Doe, a passionate software engineer with 5+ years of experience in web development and machine learning. 
-               I love building innovative solutions to real-world problems.</p>
-      </div>
-      <div class="info">
-        <h3>Contact Information</h3>
-        <p><strong>Email:</strong> sinchu17@example.com</p>
-        <p><strong>Phone:</strong> +123 456 7890</p>
-        <p><strong>Location:</strong> Hassan,Karnataka</p>
-      </div>
-      <div class="info">
-        <h3>Academic Details</h3>
-        <p><strong>Bachelor of Science in Computer Science</strong></p>
-        <p>University of California, Berkeley (2015 - 2019)</p>
-        <p><strong>Master of Science in Artificial Intelligence</strong></p>
-        <p>Stanford University (2019 - 2021)</p>
-      </div>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/sinchana-k-n-b33409337" target="_blank">LinkedIn</a>
-        <a href="https://github.com/Sinchu579/Sinchana-K-N.git" target="_blank">GitHub</a>
-      </div>
+    <div class="section">
+        <h1>Sinchana K N</h1>
+        <div class="details">
+            <p><strong>Phone:</strong> 8792539952</p>
+            <p><strong>Email:</strong> sinchusinchu0917@gmail.com</p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sinchana-k-n-b33409337" target="_blank">Sinchana K N</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/Sinchu579/Sinchana-K-N.git" target="_blank">Sinchana-K-N.git</a></p>
+        </div>
     </div>
-  </div>
 
-  <script>
-    function showProfile() {
-      document.getElementById("welcomeScreen").classList.remove("active");
-      document.getElementById("profileScreen").classList.add("active");
-    }
-  </script>
+    <div class="section">
+        <h2>Career Objective</h2>
+        <div class="details">
+            <!-- Add your career objective here -->
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+        <div class="education">
+            <table>
+                <tr>
+                    <th>Course Studied</th>
+                    <th>Name of the Institution/University</th>
+                    <th>Percentage/CGPA</th>
+                    <th>Year of Completion</th>
+                </tr>
+                <tr>
+                    <td>B.E. (Computer Science and Engineering)</td>
+                    <td>Malnad College of Engineering, Hassan, Karnataka</td>
+                    <td>8.44</td>
+                    <td>2026</td>
+                </tr>
+                <tr>
+                    <td>12th</td>
+                    <td>PRM Composite PU College, T Narasipura, Mysore dist</td>
+                    <td>80.5%</td>
+                    <td>2022</td>
+                </tr>
+                <tr>
+                    <td>10th</td>
+                    <td>G H S Kolathuru, T Narasipura talluk, Mysore dist</td>
+                    <td>83.36%</td>
+                    <td>2020</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Certifications</h2>
+        <div class="certifications">
+            <ul>
+                <li>Soft Skill Development - Prof. Haimanti Banerji (2024)</li>
+                <li>Python Summer Camp - Mohammed Shuaib, Sijeen Raj Kumar (2023)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Technical Skill Proficiency</h2>
+        <div class="skills">
+            <ul>
+                <li><strong>Operating Systems:</strong> Windows, Ubuntu</li>
+                <li><strong>Programming Languages:</strong> C, Java, Python, DSA, HTML, CSS</li>
+                <li><strong>Application Packages:</strong> Database Management System, Excel, PowerPoint</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Personal Details</h2>
+        <div class="details">
+            <p><strong>Date of Birth & Age:</strong> 17th July 2004, Age: 20</p>
+            <p><strong>Gender:</strong> Female</p>
+            <p><strong>Father’s Name:</strong> R Nagesha</p>
+            <p><strong>Permanent Address:</strong> Kolathuru Village, Sosale Hobali, T Narasipura talluk, Mysore dist, Karnataka 571120</p>
+            <p><strong>Languages Known:</strong> Kannada, English, Telugu</p>
+        </div>
+    </div>
+
 </body>
 </html>
+
+      
